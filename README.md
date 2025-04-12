@@ -1,6 +1,6 @@
 # MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing
 Implementation code of the paper **MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing**
-![Demonstrating the comprehensive capabilities of MIGE.](showcases/show_new.jpg)
+![Demonstrating the comprehensive capabilities of MIGE.](showcases/show.jpg)
 
 ## Quick Start
 
