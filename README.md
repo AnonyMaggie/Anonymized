@@ -1,5 +1,5 @@
-# MIGE: A Unified Framework for Multimodal Instruction-Based Image Generation and Editing
-Implementation code of the paper **[MIGE: A Unified Framework for Multimodal Instruction-Based Image Generation and Editing](https://arxiv.org/abs/2502.21291)**
+# MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing
+Implementation code of the paper **MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing**
 ![Demonstrating the comprehensive capabilities of MIGE.](showcases/show_new.jpg)
 
 ## Quick Start
@@ -73,8 +73,6 @@ We provide an `accelerate_config.yaml` file for single-node multi-GPU/multi-node
 sh train_scripts/train_mige.sh
 ```
 
-For convenience, we have uploaded all the models mentioned in the paper, including `bert-base-uncased`, `sd-vae-ft-ema`, `t5-v1_1-xxl`, `PixArt-XL-2-512x512`, `blip2_pretrained_flant5xxl`, `eva_vit_g`, along with the final MIGE model (`model.pth`), to [Hugging Face](https://huggingface.co/EurekaTian/MIGE). Download them and put in `output/pretrained_models`.
-
 ## Inference
 
 Inference scripts for **subject-driven image generation**, **instruction-based image editing**, and **instruction-based subject-driven image editing** are available in `MIGE/infer_scripts`. Here are some key points for performing inference:
@@ -84,8 +82,6 @@ Inference scripts for **subject-driven image generation**, **instruction-based i
 - For instruction-based subject-driven image editing, we provide a file `MIGEBench_extract_entity.py` to extract the entity in generated images, which can be used to evaluate the model's entity-preserving ability on **MIGEBench**. To set up Grounded SAM, follow the instructions in the [GroundingDINO GitHub](https://github.com/IDEA-Research/GroundingDINO) and the [Segment Anything GitHub](https://github.com/facebookresearch/segment-anything).
 
 ## MIGEBench
-
-The following benchmark files are available on [Hugging Face](https://huggingface.co/datasets/EurekaTian/MIGEBench):
 
 - `MIGEbench`
     - `add_bench.json`
